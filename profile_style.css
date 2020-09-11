@@ -1,3 +1,11 @@
+@media print{
+		iframe {
+			display: none;
+		}
+		img {
+			display: none;
+		}
+}
 body{
 	 background-color: #E59AF6; 
 	  font-family: 'Courier New';
