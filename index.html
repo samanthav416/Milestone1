@@ -2,46 +2,46 @@
 <html>
 	<head>
 		<title> Samantha Vega </title>
+		<meta name ="viewport" content="width=device-width, initial scale =1.0">
+		<link rel = "stylesheet" href = "profile_style.css" media ="screen and (min-width: 700px)">
+		<link rel = "stylesheet" href = "profile_style_media.css" media = "screen and (max-width: 699px)">
+		
+	</head>
+		
 		<body>
+		
 		<h1> Welcome to My Profile Page! </h1>
 		
-		<hr>
+		</hr>
 		
-			<nav>
-				<ul>
-				
-				<li> <a href = "#about_me" > About Me </a> </li>
-				<li> <a href = "#education_summary" > Education </a> </li>
-				<li> <a href = "#experience_summary" > Experience </a> </li>
-				<li> <a href = "#programming_skills" > Programming Skills </a> </li>
-				<li> <a href = "#general_interests" > Interests </a> </li>
-				<li> <a href = "#favorites" > Favorites </a> </li>
-					<ul>
-					<li> <a href = "#favorite_song" > Song </li>
-					<li> <a href = "#favorite_movie" > Movie </li>
-					<li> <a href = "#favorite_show" > TV Show </li>
-					</ul>
-				<li> <a href = "#favorite_website" > Favorite Website </a> </li>
-				<li> <a href = "#my_projects" > My Projects </a> </li>
-				
-				</ul>
-			</nav>
+		<div class="topnav">
+			
+			<a href="#about_me"><button class ="button">About Me</a>
+			<a href="#education_summary"><button class ="button">Education</a>
+			<a href="#experience_summary"><button class ="button">Experience</a>
+			<a href="#programming_skills"><button class ="button">Programming Skills</a>
+			<a href="#general_interests"><button class ="button">Interests</a>
+			<a href="#favorites"><button class ="button">Favorites</a>
+			<a href="#projects"><button class ="button"> Projects </a>
+			
+		</div>
+		
 			
 		<hr>
 		
 		<div id ="about_me">
 		
 		<h2> About Me </h2>
-		 
-		<p> 
-		My name is Samantha Vega. I am 21 years old and live in NYC. I am a 4th year student at St. John's Univeristy and
-		currently majoring in Computer Science with a concentration in Networking and Telecommunications.		
+		<img src = "PP 2020.jpg" 
+			style = "height 200px; width:200px" border ="1px">
 		</p>
-			<img src = "PP 2020.jpg"
-			style = "width: 200; height:200">
+			<p><span style = "font-weight: bold">Name</span>: Samantha Vega </p>
+			<p><span style = "font-weight: bold">Major</span>: Computer Science </p>
+			<p><span style = "font-weight: bold">Concentration</span>: Networking and Telecommunications </p>
+
 		</div>
 		
-		<hr>
+		
 		
 		<div id ="education_summary">
 		 <h2> Education </h2> 
@@ -53,27 +53,28 @@
 			</p>
 		</div>
 		
-		<hr>
 		
-		<div id = "experience_summary">
+		
+		<div id = "experience_summary" style = "text-align: left">
 			<h2> Experience </h2>
 			<h4> Work Experience </h4>
 				<ul>
-				<li> Operations Specialist |  Sprint / T-Mobile | March 2019 - Present </li>
-				<li> Retail Sales Consultant | Sprint | December 2017 - March 2019 </li>
-				<li> Visual Stylist | Express | May 2017 - January 2018 </li>
+				<li><span style = "font-weight: bold">Operations Specialist</span> |  Sprint / T-Mobile | March 2019 - Present </li>
+				<li><span style = "font-weight: bold">Retail Sales Consultant</span> | Sprint | December 2017 - March 2019 </li>
+				<li><span style = "font-weight: bold">Visual Stylist</span> | Express | May 2017 - January 2018 </li>
 				</ul>
 			<h4> Other Experience </h4>
 				<ul>
-				<li> Mentor | Mentor Collective at St. John's University | August 2020 - Present </li>
+				<li><span style = "font-weight: bold">Mentor</span> | Mentor Collective at St. John's University | August 2020 - Present </li>
 				</ul>
 		</div>
 		
-		<hr>
+		
 		
 		<div id = "programming_skills">
 			<h2> Programming Skills </h2>
-				
+			<div class = "color_table">	
+			
 				<table>
 					<tr>
 						<th> Language </th>
@@ -99,7 +100,7 @@
 				
 		</div>
 		
-		<hr>
+		
 		
 		<div id = "general_interests">
 			<h2> Interests </h2>
@@ -110,7 +111,7 @@
 				</p>
 		</div>
 		
-<hr>
+
 		<div id = "favorites">
 			<h2> Favorites </h2>
 		
@@ -129,28 +130,43 @@
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/gO8N3L_aERg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
+				
 		
-<hr>		
-		
-		<div id ="favorite_website">
-			<h2> Favorite Website </h2>
-			<a href = "https://play2048.co/" target = "_blank"> Play 2048! </a>
+			<h4> Favorite Website </h4>
+			<p>
 			<img src = "https://ironyca.files.wordpress.com/2014/03/2048-highscore.jpg"
 				width = "25%">
-			<p> This is my favorite website because it has provided me with entertainment a multitude of times. It has kept me entertained while also providing large amounts of stress. </p> 
+			</p>	
+			<a href="http://play2048.co/" target = "_blank"><button class ="button">Play 2048!</button></a>
 			
 		</div>
-<hr>
+
 		
-		<div>
+		<div id = "projects">
 		<h2> My Projects </h2>
-			<ol>
-			<li> Create an HTML Page</li>
-				<ul>
-				<li> For this project, we were required to implement an HTML Profile Page that contained information about us using the skills that we have learned </li>
-				<li> <a href = "https://rkileaders.teachable.com/courses/764038/lectures/13897368" target = "_blank"> Project 1 Description </li>
+			<div class = "color_table">
+			<table>
+				<tr> 
+					<th> Title </th>
+					<th> Description </th>
+					<th> Deliverable </th>
+				</tr>
+				
+				<tr>
+					<td> Create an HTML Page </td>
+					<td> <a href = "https://rkileaders.teachable.com/courses/764038/lectures/13897368" target = "_blank"> Milestone 1 </td>
+					<td> <a href = "https://samanthav416.github.io/Milestone1/" target = "_blank"> Delieverable 1 </td>
+				</tr>
+				
+				<tr>
+					<td> Add CSS </td>
+					<td> <a href = "https://rkileaders.teachable.com/courses/web-application-development/lectures/14006347" target = "_blank"> Milestone 2 </td>
+					<td> </td>
+				</tr>
 				</ul>
-			</ol>
+				</tr>
+			</table>
+		</div>
 		</div>
 <body>
 </html>
